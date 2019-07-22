@@ -1,0 +1,48 @@
+html, body, #main-cf
+{    
+    margin:0;
+    padding:0;
+}
+
+.container-cf{
+    display:flex;    
+    height: 100%;       
+}
+
+.box-cf{
+    border:1px solid #DDD;
+    padding:25px;
+    flex:1;        
+}
+
+#footer-cf,#header-cf{
+    background: #EEE;
+}
+
+#header-cf{
+    min-height: 100px;
+} 
+
+#footer-cf{
+    flex-wrap:wrap;
+    justify-content:space-between;    
+}
+
+#footer-cf .box-cf{
+    flex-basis: 25%;    
+}
+
+#content-cf{
+    min-height: 400px;
+}
+
+.box-cf section{
+    background-color: #DDD;
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    .container-cf{
+        flex-direction:column;        
+    }
+}
